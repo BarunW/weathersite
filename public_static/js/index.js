@@ -1,3 +1,12 @@
+const hours = new Date().getHours()
+const isDayTime = (hours > 5 && hours < 19 ? true : false);
+console.log(hours);
+if(isDayTime === true){
+    console.log("day");
+    document.querySelector(".sub-layout-one").style.backgroundImage = "url('/images/day.jpg')";
+    document.querySelector(".sl-childSix-toogle").style.backgroundImage = "url('/images/sunny.png')";
+}
+
 
 
 fetch('js/weather.json')
@@ -29,10 +38,15 @@ fetch('js/weather.json')
 
         document.querySelector(".sl-childFour-dayHigh").innerHTML = `Day ${dayHigh}&#176;`;
         document.querySelector(".sl-childFive-nightLow").innerHTML = `Night ${dayLow}&#176;`;
-            
+
+        document.querySelector(".high-low").innerHTML = `${dayHigh}&#176; / ${dayLow}&#176;`;
+        document.querySelector(".wind").innerHTML =`${data["query"].results["channel"].wind["speed"]} mph`;
+        document.querySelector(".humidity").innerHTML = `${data["query"].results["channel"].atmosphere["humidity"]}`;
+        document.querySelector(".visibility").innerHTML =`${data["query"].results["channel"].atmosphere["visibility"]}`;
+        document.querySelector(".pressure").innerHTML = `${data["query"].results["channel"].atmosphere["pressure"]} in`;
         
         
-       
+       document.querySelector(".weather-feelsLike").innerHTML = `${data["query"].results["channel"].item["condition"].temp}&#176;`;
         
       
     })
