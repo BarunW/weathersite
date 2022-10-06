@@ -1,0 +1,53 @@
+.sub-layout-three{
+    display: grid;
+    gap: 1rem;
+    border-radius: 0.5rem;
+    background-color: aliceblue;
+}
+.location-three{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-top: 00.5rem;
+    padding-left: 1rem;
+}
+.weather-info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding-left: 1rem;
+    font-size:40px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.detail-weather-info{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+
+}
+.icons{
+    padding-left: 1rem;
+    display: grid;
+    gap: 0.5rem;
+    padding-bottom: 1rem;
+}
+.title{
+    display: grid;
+    gap: 0.5rem;
+}
+.weather-data{
+    display: grid;
+    gap: 0.5rem;
+}
+.icons-2{
+    display: grid;
+    gap: 0.5rem;
+    grid-column-start: 5;
+}
+.title-2{
+    display: grid;
+    gap: 0.5rem;
+}
+.weather-data-2{
+    display: grid;
+    gap: 0.5rem;
+}

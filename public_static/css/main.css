@@ -1,0 +1,86 @@
+body{
+    display: grid;
+    gap: 1rem;
+    /* background-image:url("/images/night2jpg.jpg");  */
+    background-color: rgb(132, 132, 255);
+}
+.sub-layout-one{
+    height: auto;
+    width: auto;
+    display: grid;
+    gap: 1.5rem;
+    row-gap: 0.3rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding-left: 0.2rem;
+    background-image:url("/images/night2jpg.jpg");
+    background-size: cover;
+    padding-left: 1rem;
+    padding-top: 0.5rem;
+    color: #ffff;
+    border-radius: 0.7rem;
+    padding-bottom: 0.3rem;
+    
+}
+
+.sub-layout-one :first-child{
+    grid-column: span 3;
+    height: 1.5rem;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sl-childTwo-currentTemp{
+    font-size: 100px;
+    grid-row-end:3;
+    /* font-size: 100px; */
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sl-childThree-weatherCondition{
+    grid-row-start: 4;
+    font-size: 28px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.sl-childFour-dayHigh{
+    grid-column: 1;
+    grid-row-start: 5;
+    grid-template-columns: 0.5fr;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sl-childFive-nightLow{
+    grid-row: 5;
+    grid-column: 1;
+    padding-left: 10rem;
+    grid-column-end: span 2;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sub-layout-one :last-child{
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 6;
+}
+.sl-childOne-description{
+    opacity: 0.5;
+    background-color: #141313;
+   
+}
+.sl-childTwo-currentTemp{
+    font-weight: 40px;
+}
+
+.sl-childSix-toogle{
+    
+    background-image: url("/images/nightMoon.png");
+    background-repeat: no-repeat;
+    display: block;
+    position: relative;
+    
+    
+    
+}

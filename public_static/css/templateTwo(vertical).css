@@ -1,0 +1,15 @@
+/* .sub-layout-two-vertical{
+    display: grid;
+    gap: 0.5rem;
+}
+.brief-weather-info{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    align-content: center;
+   
+}
+.morningPart{
+    border-right-width: 0.2rem;
+    border-right-color: black;
+} */
+

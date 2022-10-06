@@ -1,0 +1,68 @@
+.sub-layout-two{
+    display: grid;
+    height: auto;
+    width: auto;
+    gap: 0.5rem;
+    background-color:rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.3rem;
+    padding-right: 1rem;
+    padding-left: 0.3rem;
+
+}
+.sl-two-childOne-title{
+    padding-top: 00.5rem;
+    padding-left: 00.5rem;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dayParts{
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border:solid rgb(239, 239, 239) 0.1rem;
+    border-radius: 0.5rem;
+    padding-bottom: 00.3rem;
+    
+}
+.dayTemperature{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+    border:solid rgb(239, 239, 239) 0.1rem;
+    border-radius: 0.5rem;
+    padding-bottom: 00.3rem;
+}
+
+.dayLogo{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    border:solid rgb(239, 239, 239) 0.1rem;
+    border-radius: 0.5rem;
+    padding-bottom: 00.3rem;
+}
+.dayLogo > img{
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+.precipitationPerecentage{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+
+}
