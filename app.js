@@ -32,5 +32,3 @@ app.get('', (req, res) =>{
 //packages
 app.use(cors())
 
-app.listen(port, () => console.log("Listening on port"))
-
