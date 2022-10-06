@@ -77,6 +77,7 @@ body{
 .sl-childSix-toogle{
     
     background-image: url("/images/nightMoon.png");
+    margin-top: 00.5rem;
     background-repeat: no-repeat;
     display: block;
     position: relative;
